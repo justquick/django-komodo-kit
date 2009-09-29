@@ -1,0 +1,77 @@
+Commands for the Django manage.py script
+
+   The following commands are useful for managing your Django project and can be
+run directly inside of Komodo without the need to switch over to a terminal session.
+
+dumpdata:
+   Takes a list of app names
+   Output the contents of the database as a JSON fixture.
+
+loaddata:
+   Takes a list of fixture paths
+   Installs the named fixture(s) in the database.
+
+reset:
+   Takes a list of app names
+   Executes ``sqlreset`` for the given app(s) in the current database.
+
+runserver:
+   Starts a lightweight Web server for development.
+
+runserver_plus:
+   Must have django_extensions installed.
+   Runs the regular server with the Werkzeug debugger
+
+shell:
+   Runs a Python interactive interpreter. Tries to use IPython, if it's available.
+
+shell_plus:
+   Must have django_extensions installed.
+   Uses IPython and autoloads models
+   
+startapp:
+   Creates a Django app directory structure for the given app name in this project's directory.
+
+startproject:
+   Creates a Django project directory structure for the given project name in the current directory.
+
+syncdb:
+   Create the database tables for all apps in INSTALLED_APPS whose tables
+   haven't already been created, except those which use migrations.
+
+SQL:
+   Prints out SQL commands, some of which are attached to other management commands
+   
+   sql:
+      Prints the CREATE TABLE SQL statements for the given app name(s).
+      
+   sqlall:
+      Prints the CREATE TABLE, custom SQL and CREATE INDEX SQL statements
+      for the given model module name(s).
+
+   sqlclear:
+      Takes a list of app names
+      Prints the DROP TABLE SQL statements for the given app name(s).
+
+   sqlcustom:
+      Takes a list of app names
+      Prints the custom table modifying SQL statements for the given app name(s).
+      
+   sqlflush:
+      Returns a list of the SQL statements required to return all tables in the database
+      to the state they were in just after they were installed.
+
+   sqlindexes:
+      Takes a list of app names
+      Prints the CREATE INDEX SQL statements for the given model module name(s).
+
+   sqlreset:
+      Takes a list of app names
+      Prints the DROP TABLE SQL, then the CREATE TABLE SQL, for the given app name(s).
+
+   sqlsequencereset:
+      Takes a list of app names
+      Prints the SQL statements for resetting sequences for the given app name(s).
+
+
+

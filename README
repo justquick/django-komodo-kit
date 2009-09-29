@@ -1,0 +1,13 @@
+Django-Komodo-Kit
+
+Possibly including, but not limited to, packages, extensions, macros, commands,
+and snippets for potentially simplifying Django development within Komodo Edit or Komodo IDE.
+
+For info about the commands:
+    see commands/README
+    
+For info about the snippets:
+    see snippets/README
+    
+For info about the macros:
+    see macros/README    
